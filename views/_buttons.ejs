@@ -1,0 +1,14 @@
+<div class="buttons-wrapper">
+	<a href="/" class="logo">COPYBIN</a>
+	<div class="buttons">
+		<a href="/new" class="btn" style="text-decoration: none">New</a>
+		<% if(locals.canSave){ %>
+		<button class="btn" type="submit">Save</button>
+		<%}%> <% if(locals.id != null){ %>
+		<a href="<%=locals.id%>/duplicate" class="btn" style="text-decoration: none"
+			>Duplicate</a
+		>
+
+		<%}%>
+	</div>
+</div>
