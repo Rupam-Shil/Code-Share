@@ -13,7 +13,6 @@ router.post('/save', async (req, res) => {
 	} catch (err) {
 		res.render('new', { value });
 	}
-	res.send('Thank you');
 });
 
 module.exports = router;
